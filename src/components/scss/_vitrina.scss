@@ -1,0 +1,187 @@
+
+.vit--avatar {
+    top: 0;
+    left: 50%;
+    width: 250px;
+    margin-left: -25%;
+    @media screen and (max-width: get-screen(monitor)){
+        top: 0;
+        width: 167px
+    }
+    @media screen and (max-width: get-screen(mobile)){
+        top: auto;
+        bottom: 8rem;
+        width: 140px
+    }
+}
+.vit--background {
+    background: get-colors(oil);
+    padding: 5rem;
+    margin-top: 55px;
+    .promo {
+        z-index: 9;
+        padding: 1rem
+    }
+    @media screen and (max-width: get-screen(mobile)) {
+        padding: 1rem;
+        margin-top: 50px;
+        .width-5 {
+            width: 100%
+        }        
+    }
+
+}
+
+.vit--button__berry {
+    background: get-colors(berry);
+    padding: 1rem 3rem;
+    color: get-colors(blanco);
+    font-family: get-fonts(roboto);
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+    transition: all .3s ease-in-out;
+
+        &:hover {
+            background: get-colors(cherry)
+        }
+
+        @media screen and (max-width: get-screen(monitor)){
+            padding: .5rem 1rem;
+        }
+    
+}
+
+.vit--title__main {
+    color: get-colors(blanco);
+    font-family: get-fonts(rubik);
+    font-size: calc(2.5vh + 2.5vw + 2vmin);
+    line-height: 4.3rem;
+
+    strong {
+        background: get-colors(berry);
+        position: relative;
+        top: 1rem;
+        
+    }
+
+    @media screen and (max-width: get-screen(monitor)){
+        line-height: 2.5rem;
+    }
+
+    @media screen and (max-width: get-screen(mobile)){
+        line-height: 2.5rem;
+    }
+}
+
+.vit--title__carousel {
+    color: get-colors(blanco);
+    width: 400px;
+    h2 {
+        font-size: 1.5rem
+    }
+    span {
+        background: get-colors(blanco);
+        padding: 10px;
+        font-size: 1rem;
+        color: get-colors(oil);
+        text-transform: uppercase;
+        font-weight: 800
+    }
+    .carousel__button {
+        background: get-colors(limon);
+        border: none;
+        color: get-colors(blanco);
+        font-size: 1rem;
+        font-weight: 800;
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background: get-colors(manzana)
+        }
+    }
+
+    .vit--list {
+        margin: 0;
+        display: flex;
+        text-align: left;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        margin: 1rem;
+        list-style-type: disc;
+
+        li {
+            order: 1;
+            margin: 5px;
+
+            &:nth-child(1n+1) {
+                flex: 1 0 40%
+            }
+        }
+
+    }
+
+    @media screen and (max-width: get-screen(mobile)){
+        width: 355px;
+    }
+}
+
+.custom--dots {
+    display: flex !important;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    li {
+        button {
+            width: 10px;
+            height: 10px;
+            background: get-colors(blanco);
+            margin: 0 1rem;
+            border-radius: 100%;
+        }
+    }
+}
+
+.container--promo {
+    .width-5 {
+        @media screen and (max-width: get-screen(mobile)){
+            width: 100%
+        }
+    }
+    .width-4 {
+        @media screen and (max-width: get-screen(mobile)){
+            width: 100%
+        }
+    }
+}
+
+.bot_brillo{
+    z-index: 6;
+}
+.bot_laser{
+    z-index: 5;
+}
+.bot_ojo{
+    z-index: 4;
+}
+.bot_flot{
+    z-index: 3;
+}
+.bot_torso{
+    z-index: 2;
+}
+.bot_brazo_der{
+    z-index: 1;
+}
+.bot_brazo_izq{
+    z-index: 1;
+}

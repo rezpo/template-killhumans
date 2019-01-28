@@ -1,0 +1,40 @@
+@mixin container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@mixin center--margin {
+    margin: 0 auto
+}
+
+
+.container--flex__between {
+    justify-content: space-between;
+    @include container--flex
+}
+.container--flex__middle {
+    justify-content: center;
+    @include container--flex
+}
+.container--flex__around {
+    justify-content: space-around;
+    @include container--flex
+}
+.container--flex__evenly {
+    justify-content: space-evenly;
+    @include container--flex
+}
+.container--flex__start {
+    justify-content: start;
+    @include container--flex
+}
+
+
+.relative {
+    position: relative;
+    @include center--margin
+}
+.absolute {
+    position: absolute;
+    @include center--margin
+}
